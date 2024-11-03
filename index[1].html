@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuidado de la piel</title>
+    <style>
+        h1 {
+            font-size: 60px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 0 500px;
+            margin-bottom: 30px;
+        }
+
+        .sub1 {
+            text-align: left;
+            font-size: 30px;
+            padding: 0 380px;
+
+        }
+
+        .sub2 {
+            text-align: right;
+            font-size: 30px;
+            padding: 0 300px;
+
+        }
+
+
+        .izq {
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: left;
+            padding: 0 180px;
+            margin-bottom: 25px;
+
+        }
+
+        .der {
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: right;
+            padding: 0 150px;
+            margin-bottom: 25px;
+            float: right;
+
+        }
+
+        button {
+            cursor: pointer;
+            color: black;
+            width: 250px;
+            height: 50px;
+            background-color: blanchedalmond;
+        }
+
+        li{
+            list-style-type: none;
+            color: black;
+            padding: 0 100px;
+            font-size: 35px;
+        }
+        h2{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        .rutina{
+            padding: 0 90px;
+            font-weight: bold;
+            font-size: 30px;
+
+        }
+        .images {
+            width: 500px;
+            height: auto;
+            border-radius: 20px;
+            float: right;
+            padding: 50px;
+
+        }
+
+        .images2 {
+            width: 550px;
+            height: auto;
+            border-radius: 20px;
+            float: left;
+            padding: 15px;
+
+        }
+
+        .fondo {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.151),
+                    rgba(139, 126, 126, 0.7)),
+                url(fondo.avif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .parra {
+            display: flex;
+        }
+
+        header {
+            max-height: 100px;
+        }
+
+        body {
+            background-image: url(bodyfondo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body bgcolor="beige">
+    <header class="fondo">
+        <h1>CUIDADO DE LA PIEL (SKINCARE)</h1>
+    </header>
+    <div>
+        <div>
+            <img src="images-01.webp" class="images">
+        </div>
+        <div>
+            <br>
+            <h3 class="sub1">¿Qué es?</h3>
+            <p class="izq">El Skincare es el cuidado que le damos a nuestra piel para mantenerla saludable. Se asocia
+                con las rutinas que seguimos y los productos que usamos para que la piel de nuestro rostro luzca fresca
+                y sana. </p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <br><br><br><br><br>
+            <img src="grasa.jpg" class="images2">
+        </div>
+
+        <h3 class="sub2">Piel grasa</h3>
+        <div class="parra">
+            <p class="der">Aunque cueste creerlo, una piel grasa puede ser un gran regalo si logras equilibrar la
+                producción de sebo, porque ésta nos ayuda a combatir ciertas infecciones y también a que las líneas de
+                expresión aparezcan más tarde. </p>
+        </div>
+        <div style="text-align: center;">
+            <button id="pg" onclick="pielGrasa()">Saber Más</button>
+        </div>
+        <div>
+            <br><br><br>
+            <img src="seca.jpg" class="images">
+            <br><br>
+        </div>
+        <h3 class="sub1">Piel seca</h3>
+        <div class="parra">
+            <p class="izq">El reto de esta piel es lograr una mayor elasticidad y luminosidad, así como evitar el
+                enrojecimiento y el picor.</p>
+        </div>
+        <div style="text-align: center;">
+            <button id="ps" onclick="pielSeca()">Saber Más</button>
+        </div>
+
+        <div>
+            <br><br><br><br><br><br><br><br>
+            <img src="mixta.jpeg" class="images2">
+        </div>
+        <h3 class="sub2">Piel mixta</h3>
+        <div class="parra">
+            <p class="der">Si sientes que es dificil comprender a tu piel y definirla en un tipo, muy probablemente sea
+                mixta. El principal reto es equilibrar esta condición contradictoria entre las zonas de tu rostro con
+                una mayor producción de grasa y las otras áreas normaleso incluso con resequedad.</p>
+        </div>
+        <div style="text-align: center;">
+            <button id="pm" onclick="pielMixta()">Saber Más</button>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div>
+        <h2>Rutina Basica de skincare</h2>
+        <ol>
+            <li>1.Desmaquillar y limpiar</li>
+            <p class="rutina">Elimina siempre todo el maquillaje de tu rostro antes de dormir. Un solo limpiador puede actuar como un
+                todo en uno de forma efectiva. El objetivo de esta limpieza es retirar los compuestos orgánicos
+                volátiles que provienen de la contaminación ambiental; así como eliminar residuos de maquillaje, grasa,
+                toxinas y células muertas.</p>
+            <li>2.Hidratar o humectar</li>
+            <p class="rutina">
+                La hidratación ayuda a llevar humedad al interior de nuestra piel por medio de sueros o cremas ligeras,
+                mientras que la humectación ayuda a crear una barrera protectora entre la piel y el medio ambiente
+                evitando que la humedad se escape. La humectación se hace por medio de cremas o aceites. Cabe resaltar
+                que quienes tienen piel grasa, normal o piel jóven, pueden prescindir de la humectación.</p>
+            <li>3.Proteger de agresores externos</li>
+            <p class="rutina">Este paso ayuda a protegernos de los principales agresores externos que dañan nuestra piel, tales como
+                los rayos UV, la contaminación ambiental o las luces solares, artificiales y azules.
+
+                No es común encontrar un producto que nos proteja de todo esto a la vez; los bloqueadores solares, por
+                lo general, no nos protegen ni de la luz azul de los dispositivos electrónicos ni de la contaminación
+                ambiental. </p>
+        </ol>
+        <div style="text-align: center;">
+            <button id="rut" onclick="Rutina()">Saber Más</button>
+        </div>
+    </div>
+
+
+    <script>
+        const pg = document.querySelector('#pg')
+
+        pg.addEventListener('click', () => {
+            window.location.href = 'https://www.laroche-posay.com.mx/article/como-limpiar-y-cuidar-la-piel-grasa#:~:text=La%20piel%20grasa%20o%20seborrea,grasa%20al%20tocar%20la%20piel.'
+        })
+
+        const ps = document.querySelector('#ps')
+
+        ps.addEventListener('click', () => {
+            window.location.href = 'https://info.bellisima.mx/blog/beauty-blog/skin-care-piel-seca-cual-es-la-mejor-rutina-para-este-tipo-de-piel'
+        })
+
+        const pm = document.querySelector('#pm')
+
+        pm.addEventListener('click', () => {
+            window.location.href = 'https://bellisima.mx/blogs/beauty-blog/skin-care-piel-mixta-cual-es-la-mejor-rutina-para-este-tipo-de-piel?srsltid=AfmBOooAjgaJJRTeltK6rTI5f1Wwamy6zpedWtM-zm4HgZZFCvQB1f_j'
+        })
+
+        const rut = document.querySelector('#rut')
+
+        rut.addEventListener('click', () => {
+            window.location.href = 'https://nudaest.com/blogs/blog/skin-care-que-es-y-sus-rutinas?srsltid=AfmBOoo14rVnu3DCh0aVerkcm9X0IWywFVMvPt6Ear2YVpMSGuNXoNJL#tresd'
+        })
+    </script>
+</body>
+
+</html>
